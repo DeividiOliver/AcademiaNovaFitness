@@ -16,9 +16,13 @@ html {
     font-family: 'Lato', sans-serif;
 
 }
+title {
+    background-color: orangered;
+    color: orange;
+}
 
 body {
-    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/midia/pesos.jpg);
+    background: linear-gradient(rgba(37, 36, 23, 0.8), rgb(159, 82, 0)), url(/midia/logo.jpg);
     background-position: center center;
     background-size: cover;
     background-position: 0px;
@@ -45,6 +49,9 @@ header {
     letter-spacing: 0.4rem;
     cursor: pointer;
 }
+.menu-conten .emblema {
+    display: flex;
+}
 .menu-content .list-itens {
     display: flex;
     list-style: none;
@@ -59,25 +66,90 @@ header {
 }
 
 .menu-content .list-itens a:before{
-    content: ;
+    content: ' ' ;
     position: absolute;
     bottom: 0;
     left: 0px;
     width: 0px;
     height: 1px;
     background-color: rgb(251, 255, 0);
-    transition: all 1.5s ease;
+    transition: all 2s ease;
 }
 
-.menu-content .list-itens a:hover::before {
+.menu-content .list-itens a:hover:before {
     width: 100%;
 }
 
 main {
     height: 93vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*texto principal*/
+
+.primary-text {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btns button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button:hover {
+    color: rgb(255, 165, 0);
+
+}
+
+.btns button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+
+}
+.btns button:hover:before {
+    width: 100%;
+}
 
 <video controls src="./midia/home1inicio.mp4">inicio</video>
