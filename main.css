@@ -12,7 +12,7 @@ html {
     width: 100vw;
     height: 100vh;
     font-size: 62.5%;
-    color: white;
+    color: rgb(253, 7, 7);
     font-family: 'Lato', sans-serif;
 
 }
@@ -59,7 +59,7 @@ header {
 }
 .menu-content .list-itens a {
     text-decoration: none;
-    color: white;
+    color: rgb(246, 250, 5);
     padding: 1.5rem;
     transform: 2ms ease-in;
     position: relative;
@@ -72,7 +72,7 @@ header {
     left: 0px;
     width: 0px;
     height: 1px;
-    background-color: rgb(251, 255, 0);
+    background-color: rgb(255, 10, 10);
     transition: all 2s ease;
 }
 
@@ -105,7 +105,7 @@ main {
 .second-text {
     margin-bottom: 7rem;
     font-size: 2rem;
-    color: rgb(165, 165, 165);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
 
@@ -131,7 +131,7 @@ main {
 }
 
 .btns button:hover {
-    color: rgb(255, 165, 0);
+    color: rgb(255, 0, 0);
 
 }
 
@@ -151,5 +151,15 @@ main {
 .btns button:hover:before {
     width: 100%;
 }
+.videoAcademia {
+    position: absolute;
+    top: 50;
+    left: 0;    
+    width: 35%;
+    height: 95%;
+}
+
+
+
 
 <video controls src="./midia/home1inicio.mp4">inicio</video>
